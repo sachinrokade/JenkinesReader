@@ -1,0 +1,171 @@
+<!-- http://localhost:8080/job/<job name>/config.xml -->
+
+
+<maven2-moduleset plugin="maven-plugin@3.4">
+	<actions />
+	<description />
+	<keepDependencies>false</keepDependencies>
+	<properties>
+		<hudson.plugins.jira.JiraProjectProperty
+			plugin="jira@3.0.15" />
+	</properties>
+	<scm class="hudson.plugins.git.GitSCM" plugin="git@4.1.1">
+		<configVersion>2</configVersion>
+		<userRemoteConfigs>
+			<hudson.plugins.git.UserRemoteConfig>
+				<url>https://github.com/sachinrokade/Rest-Curd.git</url>
+				<credentialsId>GitUpdated</credentialsId>
+			</hudson.plugins.git.UserRemoteConfig>
+		</userRemoteConfigs>
+		<branches>
+			<hudson.plugins.git.BranchSpec>
+				<name>*/master</name>
+			</hudson.plugins.git.BranchSpec>
+		</branches>
+		<doGenerateSubmoduleConfigurations>false
+		</doGenerateSubmoduleConfigurations>
+		<submoduleCfg class="list" />
+		<extensions />
+	</scm>
+	<canRoam>true</canRoam>
+	<disabled>false</disabled>
+	<blockBuildWhenDownstreamBuilding>false
+	</blockBuildWhenDownstreamBuilding>
+	<blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+	<triggers />
+	<concurrentBuild>false</concurrentBuild>
+	<rootModule>
+		<groupId>com.example</groupId>
+		<artifactId>Spring_Data_Trancation</artifactId>
+	</rootModule>
+	<goals>
+		clean install -Dmaven.test.skip=true checkstyle:checkstyle pmd:pmd
+	</goals>
+	<aggregatorStyleBuild>true</aggregatorStyleBuild>
+	<incrementalBuild>false</incrementalBuild>
+	<ignoreUpstremChanges>true</ignoreUpstremChanges>
+	<ignoreUnsuccessfulUpstreams>false</ignoreUnsuccessfulUpstreams>
+	<archivingDisabled>false</archivingDisabled>
+	<siteArchivingDisabled>false</siteArchivingDisabled>
+	<fingerprintingDisabled>false</fingerprintingDisabled>
+	<resolveDependencies>false</resolveDependencies>
+	<processPlugins>false</processPlugins>
+	<mavenValidationLevel>-1</mavenValidationLevel>
+	<runHeadless>false</runHeadless>
+	<disableTriggerDownstreamProjects>true
+	</disableTriggerDownstreamProjects>
+	<settings class="jenkins.mvn.FilePathSettingsProvider">
+		<path>C:\Users\sachin\.m2\settings.xml</path>
+	</settings>
+	<globalSettings
+		class="jenkins.mvn.FilePathGlobalSettingsProvider">
+		<path>C:\Users\sachin\.m2\settings.xml</path>
+	</globalSettings>
+	<reporters>
+		<hudson.plugins.checkstyle.CheckStyleReporter
+			plugin="checkstyle@4.0.0">
+			<healthy />
+			<unHealthy />
+			<pluginName>[CHECKSTYLE] </pluginName>
+			<thresholdLimit>low</thresholdLimit>
+			<canRunOnFailed>false</canRunOnFailed>
+			<useDeltaValues>false</useDeltaValues>
+			<thresholds plugin="analysis-core@1.96">
+				<unstableTotalAll />
+				<unstableTotalHigh>50</unstableTotalHigh>
+				<unstableTotalNormal>50</unstableTotalNormal>
+				<unstableTotalLow>50</unstableTotalLow>
+				<unstableNewAll />
+				<unstableNewHigh />
+				<unstableNewNormal />
+				<unstableNewLow />
+				<failedTotalAll />
+				<failedTotalHigh>10</failedTotalHigh>
+				<failedTotalNormal>10</failedTotalNormal>
+				<failedTotalLow>10</failedTotalLow>
+				<failedNewAll />
+				<failedNewHigh />
+				<failedNewNormal />
+				<failedNewLow />
+			</thresholds>
+			<dontComputeNew>true</dontComputeNew>
+			<usePreviousBuildAsReference>false</usePreviousBuildAsReference>
+			<useStableBuildAsReference>false</useStableBuildAsReference>
+		</hudson.plugins.checkstyle.CheckStyleReporter>
+		<hudson.plugins.pmd.PmdReporter
+			plugin="pmd@4.0.0">
+			<healthy />
+			<unHealthy />
+			<pluginName>[PMD] </pluginName>
+			<thresholdLimit>low</thresholdLimit>
+			<canRunOnFailed>false</canRunOnFailed>
+			<useDeltaValues>false</useDeltaValues>
+			<thresholds plugin="analysis-core@1.96">
+				<unstableTotalAll />
+				<unstableTotalHigh />
+				<unstableTotalNormal />
+				<unstableTotalLow />
+				<unstableNewAll />
+				<unstableNewHigh />
+				<unstableNewNormal />
+				<unstableNewLow />
+				<failedTotalAll />
+				<failedTotalHigh>10</failedTotalHigh>
+				<failedTotalNormal>10</failedTotalNormal>
+				<failedTotalLow>10</failedTotalLow>
+				<failedNewAll />
+				<failedNewHigh />
+				<failedNewNormal />
+				<failedNewLow />
+			</thresholds>
+			<dontComputeNew>true</dontComputeNew>
+			<usePreviousBuildAsReference>false</usePreviousBuildAsReference>
+			<useStableBuildAsReference>false</useStableBuildAsReference>
+		</hudson.plugins.pmd.PmdReporter>
+	</reporters>
+	<publishers>
+		<hudson.plugins.emailext.ExtendedEmailPublisher
+			plugin="email-ext@2.69">
+			<recipientList>
+				srokade918@gmail.com,mr.sachinrokade@gmail.com,jenkines1919@gmail.com
+			</recipientList>
+			<configuredTriggers>
+				<hudson.plugins.emailext.plugins.trigger.FailureTrigger>
+					<email>
+						<subject>$PROJECT_DEFAULT_SUBJECT</subject>
+						<body>$PROJECT_DEFAULT_CONTENT</body>
+						<recipientProviders>
+							<hudson.plugins.emailext.plugins.recipients.ListRecipientProvider />
+						</recipientProviders>
+						<attachmentsPattern />
+						<attachBuildLog>false</attachBuildLog>
+						<compressBuildLog>false</compressBuildLog>
+						<replyTo>$PROJECT_DEFAULT_REPLYTO</replyTo>
+						<contentType>project</contentType>
+					</email>
+				</hudson.plugins.emailext.plugins.trigger.FailureTrigger>
+			</configuredTriggers>
+			<contentType>text/html</contentType>
+			<defaultSubject>$DEFAULT_SUBJECT</defaultSubject>
+			<defaultContent>${JELLY_SCRIPT,template="jenkins"}</defaultContent>
+			<attachmentsPattern />
+			<presendScript>$DEFAULT_PRESEND_SCRIPT</presendScript>
+			<postsendScript>$DEFAULT_POSTSEND_SCRIPT</postsendScript>
+			<attachBuildLog>false</attachBuildLog>
+			<compressBuildLog>false</compressBuildLog>
+			<replyTo>$DEFAULT_REPLYTO</replyTo>
+			<from />
+			<saveOutput>false</saveOutput>
+			<disabled>false</disabled>
+		</hudson.plugins.emailext.ExtendedEmailPublisher>
+	</publishers>
+	<buildWrappers />
+	<prebuilders />
+	<postbuilders />
+	<runPostStepsIfResult>
+		<name>FAILURE</name>
+		<ordinal>2</ordinal>
+		<color>RED</color>
+		<completeBuild>true</completeBuild>
+	</runPostStepsIfResult>
+</maven2-moduleset>
