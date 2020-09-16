@@ -6,3 +6,4 @@ to run this app we need some configuration
    b) checkstyle and pmd plugin
 2) maven build or jobs
 3) set checkstyle or pmd threshold under specific job config
+
