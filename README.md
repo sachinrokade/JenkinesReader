@@ -8,10 +8,9 @@ to run this app we need some configuration
 2) maven build or jobs
 3) set checkstyle or pmd threshold under specific job config
 
-
 # Screenshot
 
-<img align="left" src="https://github.com/sachinrokade/JenkinesReader/blob/master/1_set plugin.png" /> </br></br>
+<img align="left" src="https://github.com/sachinrokade/JenkinesReader/blob/master/1_set plugin.png"  /> </br></br>
                                                         
 <img align="left" src="https://github.com/sachinrokade/JenkinesReader/blob/master/2_set chekcstyle pulgin Threshold.png"/></br></br>
       
@@ -22,4 +21,3 @@ to run this app we need some configuration
 <img align="left" src="https://github.com/sachinrokade/JenkinesReader/blob/master/5_pmd volation.png"/></br></br>
 
 <img align="left" src="https://github.com/sachinrokade/JenkinesReader/blob/master/6_output.png"/></br></br>
-
