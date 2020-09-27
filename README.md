@@ -10,29 +10,14 @@ to run this app we need some configuration
 
 # Screenshot
 
-
-
-
-<img align="left" src="https://github.com/sachinrokade/JenkinesReader/blob/master/1_set%20plugin.png?raw=true "set plugin" alt="Made with Angular" title="Angular" hspace="20"/>
-<img align="left" src="https://github.com/sachinrokade/JenkinesReader/blob/master/2_set chekcstyle pulgin Threshold.png" alt="Made with Bootstrap" title="Bootstrap" hspace="20"/>
-<img align="left" src="./documentation/images/C.png" alt="Developed using Browsersync" title="Browsersync" hspace="20"/>
-<br/><br/><br/><br/><br/>
-
-
-
-
  1.) Set plugin
- 
-![Alt text](https://github.com/sachinrokade/JenkinesReader/blob/master/1_set%20plugin.png?raw=true "set plugin") </br>
+<img align="left" src="https://github.com/sachinrokade/JenkinesReader/blob/master/1_set%20plugin.png?raw=true "set plugin" />
+                                                                                                                          
+ 2.) Set Chekcstyle Pulgin Threshold                                                                                             
+<img align="left" src="https://github.com/sachinrokade/JenkinesReader/blob/master/2_set chekcstyle pulgin Threshold.png"/>
+      
+ 3.) Check result.png
+<img align="left" src="https://github.com/sachinrokade/JenkinesReader/blob/master/3_check result.png" />
 
- 
- 
-![Alt text](https://github.com/sachinrokade/JenkinesReader/blob/master/2_set chekcstyle pulgin Threshold.png?raw=true "Set Chekcstyle Pulgin Threshold")
-
- 3.) 
- 
-![Alt text](https://github.com/sachinrokade/JenkinesReader/blob/master/3_check result.png?raw=true "Check Result")
-
- 4.) 
- 
-![Alt text](https://github.com/sachinrokade/JenkinesReader/blob/master/4_ck volation.png?raw=true "Checkstyle volation")
+ 4.) Checkstyle volation
+<img align="left" src="https://github.com/sachinrokade/JenkinesReader/blob/master/4_ck volation.png"/)
