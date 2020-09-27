@@ -11,7 +11,7 @@ to run this app we need some configuration
 
 # Screenshot
 
-<img align="left" src="https://github.com/sachinrokade/JenkinesReader/blob/master/1_set plugin.png" width=270 height=480/> </br></br>
+<img align="left" src="https://github.com/sachinrokade/JenkinesReader/blob/master/1_set plugin.png" /> </br></br>
                                                         
 <img align="left" src="https://github.com/sachinrokade/JenkinesReader/blob/master/2_set chekcstyle pulgin Threshold.png"/></br></br>
       
