@@ -7,5 +7,5 @@ to run this app we need some configuration
 2) maven build or jobs
 3) set checkstyle or pmd threshold under specific job config
 
-![alt text](https://github.com/sachinrokade/JenkinesReader/blob/master/1_set plugin.png?raw=true)
 
+![Alt text](https://github.com/sachinrokade/JenkinesReader/blob/master/1_set%20plugin.png?raw=true "set plugin")
