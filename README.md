@@ -8,4 +8,8 @@ to run this app we need some configuration
 3) set checkstyle or pmd threshold under specific job config
 
 
+# Screenshot
+
+ 1.) Set plugin
+ 
 ![Alt text](https://github.com/sachinrokade/JenkinesReader/blob/master/1_set%20plugin.png?raw=true "set plugin")
