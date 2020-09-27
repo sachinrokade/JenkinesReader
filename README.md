@@ -23,3 +23,12 @@ to run this app we need some configuration
 
  4.) Checkstyle volation </br>
 <img align="left" src="https://github.com/sachinrokade/JenkinesReader/blob/master/4_ck volation.png"/></br></br>
+
+
+ 5.) PMD volation </br>
+<img align="left" src="https://github.com/sachinrokade/JenkinesReader/blob/master/5_pmd volation.png"/></br></br>
+
+
+ 6.) Output </br>
+<img align="left" src="https://github.com/sachinrokade/JenkinesReader/blob/master/6_output.png"/></br></br>
+
