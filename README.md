@@ -14,7 +14,7 @@ to run this app we need some configuration
  
 ![Alt text](https://github.com/sachinrokade/JenkinesReader/blob/master/1_set%20plugin.png?raw=true "set plugin") </br>
 
- 2.) 
+ 
  
 ![Alt text](https://github.com/sachinrokade/JenkinesReader/blob/master/2_set chekcstyle pulgin Threshold.png?raw=true "Set Chekcstyle Pulgin Threshold")
 
